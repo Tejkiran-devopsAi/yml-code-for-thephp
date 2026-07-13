@@ -1,0 +1,21 @@
+#generate code for the ingress
+apiVersion: networking.k8s.io/v1
+kind: Ingress 
+metadata:
+  name: my-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: / 
+spec:
+  ingressClassName: nginx
+
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+
+            backend:
+              service:
+                name: my-service
+                port:
+                  number: 80

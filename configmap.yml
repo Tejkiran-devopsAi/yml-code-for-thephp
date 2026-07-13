@@ -1,0 +1,9 @@
+#henerate the code for configmap
+apiVersion: v1
+kind: ConfigMap 
+metadata:
+ name: myconfig
+data:
+  DB_HOST: myslqdb
+  DB_PORT: "3306" 
+
