@@ -4,6 +4,6 @@ kind: ConfigMap
 metadata:
  name: myconfig
 data:
-  DB_HOST: myslqdb
+  DB_HOST: mysqldb
   DB_PORT: "3306" 
 
