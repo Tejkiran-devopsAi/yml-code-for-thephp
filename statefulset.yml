@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: dbcont
-          image: devopstej/db:latest
+          image: devopstej/phpapp:db
 
           ports:
             - containerPort: 3306
